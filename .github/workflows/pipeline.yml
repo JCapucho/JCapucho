@@ -1,0 +1,36 @@
+name: generate animation
+# Events
+on:
+  # run automatically every 12 hours
+  schedule:
+    - cron: "0 */12 * * *" 
+  # Manual trigger
+  workflow_dispatch:
+  # Push to master
+  push:
+    branches:
+    - master
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest  # Tipo de VM
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v2
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - name: Push generated files to branch
+        run: |
+          export ASSETS_BRANCH=assets
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git switch "$ASSETS_BRANCH" 2>/dev/null || git switch -c "$ASSETS_BRANCH"
+          git add dist/
+          git commit -m "Update README assets"
+          git push origin assets --force
