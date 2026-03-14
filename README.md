@@ -1,22 +1,13 @@
-<div align="center">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=1000&center=true&vCenter=true&width=435&lines=Thinking+.+.+.+.+.;Failed" alt="Thinking..... Failed" />
-</div>
+Hi, my name is João Capucho, a Masters student in Cybersecurity at universidade
+de Aveiro, where I also did my Bachelor in Software Engineering.
 
-##
- 
-<div align="center">
-  <a href = "mailto:jcapucho7@gmail.com">
-    <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-  </a>
-  <a href="https://matrix.to/#/@jcapucho:matrix.org" target="_blank">
-    <img src="https://img.shields.io/badge/-Matrix-black?style=for-the-badge&logo=matrix&logoColor=white" alt="Matrix"/>
-  </a>
-</div>
+My main interests are in the areas of networking, security, and the intersection
+of both of them. I also work with infrastructure, DevOps, and developer
+tooling.
 
-##
-
-Hi, my name is João Capucho and I'm a Software Engineering student at
-universidade de Aveiro
+In my free time I also dabble in GPU programming (be it for rendering or
+otherwise), compilers and PLT, and hardware and electronics. Please do not tell
+me about more cool stuff and areas, my free time would not survive that (╥﹏╥).
 
 ##
 
